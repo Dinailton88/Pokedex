@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href= "/css/style.css" rel="stylesheet">
+    <title>Detalhes.</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %> 
+    <main>
+        <h1><%= poke[0].nome %></h1>
+        <table>
+            <thead>
+                <td id="titulo" colspan="2"> Detalhes: </td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Numero:</td>
+                    <td><%= poke[0].numero %></td>
+                </tr>
+                <tr>
+                    <td>Altura:</td>
+                    <td><%= poke[0].Altura %></td>
+                </tr>      
+                <tr>
+                    <td>Peso:</td>
+                    <td><%= poke[0].Peso %></td>
+                </tr>   
+                <tr>
+                    <td>Categoria:</td>
+                    <td><%= poke[0].categoria %></td>
+
+                </tr>      
+                <tr>
+                    <td>Habilidades:</td>
+                    <td><%= poke[0].habilidades %></td>
+                </tr> 
+            </tbody>
+        </table>
+
+      
+         
+    </main>
+    <%-include('./partials/footer.ejs')%>     
+</body>
+</html>

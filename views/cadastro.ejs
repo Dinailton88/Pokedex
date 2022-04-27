@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href= "/css/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %> 
+    <main id="cadastro">
+        <form method="post" action="/cadastro">
+            <fieldset>                
+                    <input type="number" name="numero" id="">
+                    <label for="numero">Numero</label>
+            </fieldset>
+            <fieldset>
+                <input type="text" name="nome">
+                <label for="nome"> Nome</label>
+            </fieldset>    
+            <fieldset>
+                <input type="text" name="tipo">
+                <label for="tipo"> Tipo</label>
+            </fieldset>
+            <fieldset>
+                <input type="url" name="img" id="">
+                <label id="imagem_Cad" for="img">Imagem</label>
+            </fieldset>
+            <fieldset>
+                <input type="text" name="Altura">
+                <label for="Altura">Altura</label>
+            </fieldset>
+            <fieldset>
+                <input type="text" name="Peso">
+                <label for="Peso">Peso</label>
+            </fieldset>
+            <fieldset>
+                <input type="text" name="categoria">
+                 <label for="Categoria">Categoria</label>
+            </fieldset>
+            <fieldset>
+                <input type="text" name="habilidades">
+                <label for="habilidades">Habilidades</label>
+            </fieldset>
+            <fieldset>
+                <button  type="submit">Enviar</button>
+            </fieldset>
+                
+                    
+                
+                
+                   
+                
+                
+                    
+                
+                    
+                
+               
+                    
+                
+                
+                    
+                
+               
+                    
+                
+           
+                        
+
+        </form>
+    </main>    
+    <%-include('./partials/footer.ejs')%> 
+</body>
+</html>

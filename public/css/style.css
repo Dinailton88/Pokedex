@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	color: white;
+
+}
+
+body {
+	height: 100vh; /*  view port : tmanho da altura tela do usuazio*/
+	width: 100vw; /*largura do site do usuario*/
+	display: flex;background-color: brown;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+header {
+	width: 100%;
+	height: 10%;
+	background-color: white;
+	display: flex; /*Display flex serve pra que pelo pai alinhem-se o conteudo dos filhos em relação a ele*/
+	justify-content: space-around; /* Alinhar iten na horizontal direita esquerda*/
+	align-items: center; /*Alinhar itens na vertical em cima em baixo*/
+	font: 30px normal arial;
+	flex-wrap: nowrap;
+}
+header ul {
+	list-style: none;
+	display: flex;
+	gap: 100px;
+	color: brown;
+
+}
+img#logo_Poke {
+	max-height: 95%;
+}
+
+header a {
+	text-decoration: none;
+	color: #08224e;
+
+}
+header a:hover { /* hover muda a cor da elemento qquando o mouse esta em cima*/
+	color:  #08224e;
+	background-color: #ffcd08;
+	border: #08224e;
+}
+
+main {
+	height: 80%;/* min-height: 80%; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2% 0% 0% 0%;
+	flex-wrap: wrap; /* quebra respeitar o padrão do card e o Layout*/
+}
+section#cards{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-content: flex-start;
+	overflow: auto;
+	align-items: flex-start;
+}
+section#cards>a{
+	height: 85%;
+	width: 30%;
+}
+.card {
+	border: 1px solid crimson;
+	height: 80%;
+	width: 95%;
+	color: #08224e;
+	background-color: white;
+}
+.nome_Pokemon, .tipo_Pokemon {
+	display: flex;
+	flex-direction: column;
+	background-color: #08224e;
+	text-align: center;
+}
+
+.tipo_Pokemon {
+	color:  #ffcd08;
+}
+
+.nome_Pokemon {
+	color:  #eecc08;
+}
+.img {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.img>img{
+	max-width: 80%;
+	aspect-ratio: 1;
+}
+thead {
+	text-align: center;
+}
+table {
+	height: 300px;
+	width: 300px;
+	text-align: center;
+	background-color:  #08224e;
+}
+table td {
+	border: solid brown;
+	color: #ffcd08;
+}
+form {
+    display: flex;
+	flex-direction: column;
+	color: #ffcd08;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 95%;
+    justify-content: space-around;
+    align-items: center;
+}
+fieldset:nth-child(9){
+   justify-content: center;
+}
+fieldset:nth-child(9)>button{
+    height: 120%;
+    width: 30%;    
+}
+fieldset:nth-child(9)>button:hover{
+    background-color: aqua;
+    transform: scale(0.9)
+}
+fieldset{
+    height: 5%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0% 1%;
+    border: none;
+}
+input {
+	height: 90%;
+    width: 75%;}
+button {
+	height: 30px;
+}
+
+footer {
+	height: 10% ;
+	background-color: white;
+	color:  #08224e;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font: 30px arial;
+}
