@@ -1,5 +1,7 @@
 import express from "express" //importando o express
 import path from 'path'         // fazendo o ejs reconhecer a pasta public ou outra coisa que não esteja na viwes(definir caminhos padõres)
+import dotenv from "dotenv"
+dotenv.config()
 
 const __dirname = path.resolve(path.dirname('')) // dirname serve para informa qual é o caminho padrão
 
