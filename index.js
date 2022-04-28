@@ -1,22 +1,22 @@
-import express from "express" //importando o express
-import path from 'path'         // fazendo o ejs reconhecer a pasta public ou outra coisa que não esteja na viwes(definir caminhos padõres)
+import express from "express" 
+import path from 'path'         
 import dotenv from "dotenv"
 dotenv.config()
 
-const __dirname = path.resolve(path.dirname('')) // dirname serve para informa qual é o caminho padrão
+const __dirname = path.resolve(path.dirname('')) 
 
 
-const app = express()           //instanciando o express dentro da const app
+const app = express()          
 
-app.use(express.urlencoded({extended:true})) //infromação vai para o corpo (body)
-app.use(express.json()) //converter as insformações para JSON
+app.use(express.urlencoded({extended:true})) 
+app.use(express.json()) 
 
-app.set("view engine","ejs")    // faz com que o express reconheça o ejs como motor de visualização
-app.use(express.static(path.join(__dirname,"public")))      //configurando express pra reconhecer a pasta public juntanto sem excluir a views
+app.set("view engine","ejs")    
+app.use(express.static(path.join(__dirname,"public")))      
 
 const port = process.env.PORT || 3001 
 app.listen(port,() => {
-    console.log(`Rodando na porta ${port}`) //listen é uma função do express para criar servidor
+    console.log(`Rodando na porta ${port}`) 
     })
     let pokemon = [
         {
@@ -59,7 +59,7 @@ app.listen(port,() => {
       
     ]
 
-app.get('/',(req,res)=>{                // get p eum metodo HTTP ou HTTPS que serve para para trazer uma pagina
+app.get('/',(req,res)=>{              
     res.render('index.ejs',{
         pokemon
     })         
