@@ -10,7 +10,14 @@
 <body>
     <%- include('./partials/header.ejs') %> 
     <main>
+        
+      
         <h1><%= poke[0].nome %></h1>
+        <section id="detalhes">
+
+           <img id="imagem_Detalhes" src="<%= poke[0].img %>" alt="<%= poke.nome %>">  
+
+        </section>
         <table>
             <thead>
                 <td id="titulo" colspan="2"> Detalhes: </td>
@@ -39,8 +46,7 @@
                 </tr> 
             </tbody>
         </table>
-
-      
+            
          
     </main>
     <%-include('./partials/footer.ejs')%>     
